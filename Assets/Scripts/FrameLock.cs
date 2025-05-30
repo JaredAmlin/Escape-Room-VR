@@ -9,7 +9,7 @@ public class FrameLock : MonoBehaviour
     [SerializeField] int[] _lockCode = new int[3] { 1, 2, 3 };
     int[] _enteredCode = { 0, 0, 0 };
 
-    private XRSocketInteractor[] _interactors;
+    [SerializeField] private XRSocketInteractor[] _interactors;
     [SerializeField] UnityEvent _onCheck;
 
     private void Start()

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9082240506953317881}
   - component: {fileID: 1854646621}
   - component: {fileID: 1854646620}
+  - component: {fileID: 8755966187943497939}
   m_Layer: 6
   m_Name: BlueOrb
   m_TagString: Untagged
@@ -268,3 +269,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &8755966187943497939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9082240506953317878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5066ddc3d561a364ca196ff58675f281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frameID: 3
