@@ -16,7 +16,7 @@ public class LightBlade : MonoBehaviour
             if (!_lightParticles.isPlaying)
             {
                 _lightParticles.Play();
-                _lightParticles.transform.position = other.ClosestPoint(_lightParticles.transform.position);
+                //_lightParticles.transform.position = other.ClosestPoint(_lightParticles.transform.position);
             }
         }
     }

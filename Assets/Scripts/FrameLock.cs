@@ -11,6 +11,8 @@ public class FrameLock : MonoBehaviour
 
     [SerializeField] private XRSocketInteractor[] _interactors;
     [SerializeField] UnityEvent _onCheck;
+    [SerializeField] UnityEvent _wrongAnswer;
+
 
     private void Start()
     {
@@ -61,7 +63,10 @@ public class FrameLock : MonoBehaviour
             for(int i = 0;  i < _enteredCode.Length; i++)
             {
                 if (_enteredCode[i] != _lockCode[i])
+                {
+                    _wrongAnswer.Invoke();
                     return false;
+                }
             }
             return true;
         }
